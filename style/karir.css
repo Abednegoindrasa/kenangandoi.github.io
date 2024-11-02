@@ -1,0 +1,199 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.navbar {
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 1%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+
+  position: fixed;
+  z-index: 999999999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 15px;
+}
+.navbar_center li {
+  border: 2px;
+  display: contents;
+}
+
+nav a {
+  text-decoration: none;
+
+  border: 2px;
+  padding: 0px 8px 0px 8px;
+}
+
+.navbar_left a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(163, 120, 27);
+}
+.navbar_left span {
+  color: rgb(139, 168, 32);
+}
+#logo a{
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(163, 120, 27);
+}
+#logo span{
+  color: rgb(139, 168, 32);
+}
+
+.navbar_center a:hover {
+  background-color: rgb(0, 0, 0);
+  padding: 0px 8px 0px 8px;
+  border-radius: 5px;
+  color: greenyellow;
+}
+.navbar_right {
+  padding: 0px 8px 0px 8px;
+  text-decoration: none;
+  display: flex;
+
+  list-style: none;
+  gap: 10px;
+}
+
+#sign {
+  font-size: small;
+}
+#login {
+  text-decoration: none;
+  list-style: none;
+  background-color: rgb(230, 227, 210);
+  padding: 10px 16px 10px 0px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.navbar_right #login :hover {
+  background-color: black;
+  padding: 10px 16px 10px 0px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+/* Navbar Barr */
+
+/* Carer Info */
+
+.container-karir-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info {
+  padding-left: 10vmax;
+  padding-top: 75px;
+  max-width: 50%;
+  color: #006041;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container-karir-info img {
+  max-width: 45%;
+  padding-top: 5vmax;
+  padding-right: 10vmax;
+  border-radius: 10px;
+}
+.info hr {
+  color: #006041;
+  width: 10vmax;
+}
+.info p {
+  font-size: 25px;
+  display: flex;
+}
+.info span {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.info h1 {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.info h4 {
+  font-weight: lighter;
+}
+
+/* End of Carer Info */
+
+/* Value */
+.container-value {
+  position: relative;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container-value h1 {
+  color: #006041;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 1.5vmax;
+}
+.row-1 {
+  display: flex;
+  gap: 20px;
+  border: 20px;
+  margin-top: 20px;
+  position: relative;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+  text-align: center;
+}
+
+.card {
+  width: 15rem;
+  height: 24.5rem;
+  border-radius: 30px;
+}
+/* End of Value */
+
+/* Job Info */
+
+.container-job-info {
+  position: relative;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+  text-align: center;
+}
+
+.container-job-info h1 {
+  color: #006041;
+  font-weight: bold;
+  padding: 1vmax;
+}
+.table {
+  width: 60%;
+  margin: auto;
+}
+
+.title {
+  text-align: left;
+}
+
+/* End of Job Info */

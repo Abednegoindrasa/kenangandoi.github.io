@@ -1,0 +1,199 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    
+}
+
+.navbar{
+    justify-content: space-between; 
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    /* background-color:brown; */
+    padding-left: 5%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+    position: fixed;;
+    z-index: 999999999;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+.navbar_center li{
+    border: 2px;
+    display: contents;
+    
+    
+    
+}
+
+nav a {
+    text-decoration: none;
+
+    border: 2px ;
+    padding: 0px 8px 0px 8px;
+}
+
+.navbar_left a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 10px;
+    color: rgb(163, 120, 27);
+}
+.navbar_left span{
+    color: rgb(139, 168, 32);
+}
+
+.navbar_center a:hover{
+    background-color: rgb(0, 0, 0);
+    padding: 0px 8px 0px 8px;
+    border-radius: 5px; 
+    color: greenyellow; 
+}
+.navbar_right{
+    padding: 0px 8px 0px 8px;
+    text-decoration: none;
+    display: flex;
+
+    list-style: none;
+    gap: 10px;
+    
+}
+
+#sign{
+    font-size: small;
+    
+}
+#login{
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(230, 227, 210);
+    padding: 10px 16px 10px 0px ;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+
+}
+.navbar_right #login :hover{
+    background-color: black;
+    padding: 10px 16px 10px 0px ;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+
+}
+
+
+/* Navbar Barr */
+.carousel-inner{
+    height: 300px;
+
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: fill;
+}
+.col-sm-4 li{
+    text-align: right;
+    list-style: none;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.table{
+    margin: 10px 10px 10px 10px;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
+.container-fluid {
+    font-family: sans-serif;
+    font-size: large;
+    color: black;
+    text-size-adjust: calc();
+}
+/* Footer */
+
+#logo a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 10px;
+    color: rgb(163, 120, 27);
+}
+#logo span{
+    color: rgb(139, 168, 32);
+}
+.container-footer{
+    width: 100%;
+    display: flex;
+    padding-right: 5%;
+    margin-left: 10000px;
+}
+.container-footer{
+    justify-content: space-between; 
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    /* background-color:brown; */
+    padding-left: 5%;
+    padding-right: 1%;
+    background-color: rgb(255, 0, 0);
+    color: black;
+    
+    position: fixed;;
+    z-index: 999999999;
+}
+
+#judul h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    color: #006041; 
+}
+#judul p {
+    align-items: center;
+    text-align: center;
+}
+#judul h2{
+    
+    text-align: left;
+    font-size: 60px;
+    font-weight: 800;
+    color: #006041; 
+}
+#judul h3{
+    
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    color: #006041; 
+}
+.goto li{
+    list-style: none;
+    text-decoration: none;
+}
+.goto a{
+    list-style: none;
+    text-decoration: none;
+}
+
+

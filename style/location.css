@@ -1,0 +1,219 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.navbar {
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  /* background-color:brown; */
+  padding-left: 5%;
+  padding-right: 1%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+
+  position: fixed;
+  z-index: 999999999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 15px;
+}
+.navbar_center li {
+  border: 2px;
+  display: contents;
+}
+
+nav a {
+  text-decoration: none;
+
+  border: 2px;
+  padding: 0px 8px 0px 8px;
+}
+
+.navbar_left a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(163, 120, 27);
+}
+.navbar_left span {
+  color: rgb(139, 168, 32);
+}
+
+.navbar_center a:hover {
+  background-color: rgb(0, 0, 0);
+  padding: 0px 8px 0px 8px;
+  border-radius: 5px;
+  color: greenyellow;
+}
+.navbar_right {
+  padding: 0px 8px 0px 8px;
+  text-decoration: none;
+  display: flex;
+
+  list-style: none;
+  gap: 10px;
+}
+#logo a{
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(163, 120, 27);
+}
+#logo span{
+  color: rgb(139, 168, 32);
+}
+
+#sign {
+  font-size: small;
+}
+#login {
+  text-decoration: none;
+  list-style: none;
+  background-color: rgb(230, 227, 210);
+  padding: 10px 16px 10px 0px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.navbar_right #login :hover {
+  background-color: black;
+  padding: 10px 16px 10px 0px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+/* Navbar Barr */
+.carousel-inner {
+  height: 600px;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Map */
+.map {
+  display: flex;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+  height: 80vh; /* sesuai kebutuhan tinggi kontainer */
+}
+
+.map img {
+  width: 1000px;
+  height: 600px;
+  padding-top: 75px;
+}
+
+/* Store Logo */
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+}
+
+.title .bg-title {
+  position: absolute;
+  top: 50%; /* posisikan gambar di tengah */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: auto;
+  opacity: 0.8; /* buat gambar latar belakang samar-samar */
+  z-index: 1; /* pastikan ini berada di belakang teks */
+}
+
+.title span {
+  color: #006041;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -2.7px;
+  position: relative;
+  z-index: 2; /* pastikan teks utama berada di depan */
+  padding-top: 70px;
+}
+
+/* Store */
+
+/* Container untuk menampung semua card */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+  display: flex;
+  position: relative;
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Card content styling */
+.card-content {
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.maps-link {
+  color: #006041;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hours {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* Arrow styling */
+.arrow {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-size: 20px;
+  color: #006041;
+}
