@@ -1,0 +1,161 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.navbar {
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 1%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+
+  position: fixed;
+  z-index: 999999999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 15px;
+}
+.navbar_center li {
+  border: 2px;
+  display: contents;
+}
+
+nav a {
+  text-decoration: none;
+
+  border: 2px;
+  padding: 0px 8px 0px 8px;
+}
+
+.navbar_left a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(163, 120, 27);
+}
+.navbar_left span {
+  color: rgb(139, 168, 32);
+}
+
+.navbar_center a:hover {
+  background-color: rgb(0, 0, 0);
+  padding: 0px 8px 0px 8px;
+  border-radius: 5px;
+  color: greenyellow;
+}
+.navbar_right {
+  padding: 0px 8px 0px 8px;
+  text-decoration: none;
+  display: flex;
+
+  list-style: none;
+  gap: 10px;
+}
+
+#sign {
+  font-size: small;
+}
+#login {
+  text-decoration: none;
+  list-style: none;
+  background-color: rgb(230, 227, 210);
+  padding: 10px 16px 10px 0px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.navbar_right #login :hover {
+  background-color: black;
+  padding: 10px 16px 10px 0px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+/* Navbar Barr */
+
+/* Hubungi Kami */
+.container-hubungi-kami {
+  padding-top: 6vmax;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hubungi-kami-title {
+  text-align: center;
+}
+.hubungi-kami-title h1 {
+  color: #006041;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.hubungi-kami-title h5 {
+  font-size: 15px;
+  color: gray;
+}
+
+.hubungi-kami-isi {
+  display: flex;
+}
+
+.container-hubungi-kami-info {
+  font-size: 13px;
+  text-align: left;
+  background-color: #006041;
+  width: 450px;
+  margin-top: 3vmax;
+  margin-left: 18vmax;
+  border-radius: 10px;
+  color: white;
+}
+
+.container-hubungi-kami-info h2 {
+  font-size: 25px;
+  padding-top: 25px;
+  padding-left: 25px;
+  font-weight: bold;
+}
+
+.container-hubungi-kami-info p {
+  font-size: 13px;
+  padding-top: 10px;
+  padding-left: 25px;
+  width: 85%;
+  text-align: justify;
+}
+
+.container-hubungi-kami-info img {
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.container-hubungi-kami-info span {
+  margin-left: 10px;
+}
+
+.hubungi-kami-form {
+  width: 30vmax;
+  margin-top: 2vmax;
+  margin-left: 5vmax;
+}
+
+.hubungi-kami-form button {
+  width: 22vmax;
+}
+
+/* End of Hubungi Kami */
