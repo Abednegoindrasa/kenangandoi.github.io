@@ -14,17 +14,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style/karir.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar_left">
-        <img
-          src="logo/coffee-bean-icon.png"
-          alt="logo here!"
-          width="25px"
-        />
-        <a href="">Kenangan<span>DOI</span>.</a>
+        <img src="logo/coffee-bean-icon.png" alt="logo here!" width="25px" />
+        <a href="index.html">Kenangan<span>DOI</span>.</a>
       </div>
       <div class="navbar_center">
         <ul>
@@ -38,12 +39,43 @@
         </ul>
       </div>
       <div class="navbar_right">
-        <li><a id="sign" href="Registration.html">Sign Up</a></li>
-        <li><a id="login" href="login.html">Log In</a></li>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <img src="Picture/menu.png" alt="" />
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <li><a id="sign" href="Registration.html">Sign Up</a></li>
+            <br />
+            <li><a id="login" href="login.html">Log In</a></li>
+            <br />
+            <li><a id="profile" href="profile.html">Profile</a></li>
+          </div>
+        </div>
       </div>
+      <!-- Offcanvas Component -->
     </nav>
     <!-- Navbar -->
-
     <!-- Main -->
 
     <!-- Carer Info -->
@@ -175,6 +207,110 @@
       </table>
     </div>
     <!-- End of Job Info -->
+    <div class="container-info-faq">
+      <div class="info-faq-title">
+        <h1>FAQ (Frequently Asked Question)</h1>
+      </div>
+      <div class="info-faq-description">
+        <p>
+          Untuk KenanganDoi yang lebih baik, kami membutuhkan masukan dari
+          pelanggan setia KenanganDoi untuk perbaikan layanan kami kedepannya.
+          Bagaimana cara mengajukan feedback/keluhan? <br />
+          <br />
+          Untuk pengajuan feedback/keluhan terhadap pelayanan dan produk
+          KenanganDoi, pelanggan dapat mengakses chatbot yang tersedia di
+          website kenangandoi.id atau menghubungi Whatsapp Customer Care
+          KenanganDoi
+          <br />
+          <br />
+          Untuk membantu menjawab beberapa pertanyaan umum seputar KenanganDoi,
+          berikut adalah beberapa pertanyaan dan jawabannya:
+        </p>
+      </div>
+    </div>
+    <!-- End of title -->
+
+    <!-- Faq Question -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Bagaimana cara mengajukan keluhan?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Mohon maaf atas ketidaknyamanannya. Untuk pengajuan keluhan terhadap
+            pelayanan dan produk Kenangan Doi dapat mengakses chatbot yang
+            tersedia di website kenangandoi.id atau dapat menghubungi WhatsApp
+            Customer Care Kenangan Doi dengan mengklik ikon WhatsApp di bawah
+            ini.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Dimanakah lokasi outlet kenanganDoi?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Untuk lokasi Kenangan Doi bisa dicek di Google Maps dengan mengetik
+            “Kenangan Doi” atau cek di pilihan "Store" pada homepage
+            kenangandoi.id untuk menemukan lokasi Kenangan Doi terdekat dari
+            alamatmu.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Bagaimana cara melamar pekerjaan di kenanganDoi?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Untuk melamar kerja pada kenanganDoi dapat cek di pilihan "Carrer"
+            pada homepage kenangandoi.id untuk dapat mengecek ketersediaan
+            lowongan
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- End of Main -->
 
     <!-- Footer -->
