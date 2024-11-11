@@ -111,7 +111,7 @@ hr {
   color: #006041;
   width: 10vmax;
 }
-p {
+.container-our-story p {
   font-size: 25px;
   display: flex;
 }
@@ -321,4 +321,14 @@ Button styles .btn-primary {
   justify-content: center; /* menengahkan secara horizontal */
   align-items: center; /* menengahkan secara vertikal */
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+#logo a{
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(163, 120, 27);
+}
+#logo span{
+  color: rgb(139, 168, 32);
 }

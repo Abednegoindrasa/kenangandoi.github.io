@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/profile.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_left">
+        <img src="logo/coffee-bean-icon.png" alt="logo here!" width="25px" />
+        <a href="index.html">Kenangan<span>DOI</span>.</a>
+      </div>
+      <div class="navbar_center">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="location.html">Store</a></li>
+          <li><a href="collab.html">Collaboration</a></li>
+          <li><a href="karir.html">Career</a></li>
+          <li><a href="contact_us.html">ContactUs</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="navbar_right">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <img src="Picture/menu.png" alt="" />
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <li><a id="sign" href="Registration.html">Sign Up</a></li>
+            <br />
+            <li><a id="login" href="login.html">Log In</a></li>
+            <br />
+            <li><a id="profile" href="profile.html">Profile</a></li>
+          </div>
+        </div>
+      </div>
+      <!-- Offcanvas Component -->
+    </nav>
+    <!-- Navbar -->
+    <!-- Main -->
+    <div class="container-login">
+      <div class="container-login-image">
+        <img
+          src="Picture/WhatsApp Image 2024-11-01 at 16.13.01_39d5ada1.jpg"
+          alt="mypicture"
+        />
+        <div class="container-login-image-info">
+          <img src="Picture/resume.png" alt="profile" />
+          <span>Abednego Indra Saputra</span><br />
+          <img src="Picture/mail-outline.svg" alt="email" />
+          <span>312210001@student.machung.ac.id</span><br />
+          <img src="Picture/location-outline.svg" alt="location" />
+          <span>Perumahan Graha Dewata Malang</span><br />
+          <img src="Picture/call-outline.svg" alt="phone-number" />
+          <span>+62 851-5707-5549</span>
+        </div>
+      </div>
+      <div class="container-login-info">
+        <form>
+          <div class="form-group">
+            <label for="first-name">Fullname</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Abednego Indra Saputra"
+              readonly
+            />
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Abedddd" readonly />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="312210001@student.machung.ac.id"
+              readonly
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              placeholder="Perumahan Graha Dewata"
+              readonly
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="+62 851-5707-5549"
+              readonly
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- End of main -->
+    <!-- Footer -->
+    <div id="footer" class="container">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+        <div id="logo" class="col mb-3">
+          <img src="logo\coffee-bean-icon.png" alt="logo here!" width="25px" />
+          <a href="">Kenangan<span>DOI</span>.</a>
+          <br />
+          <p class="text-body-secondary">© 2024</p>
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          <h5>Customer Center</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Gedung Graha Ganesha</a
+              >
+            </li>
+            <p>
+              Lantai 1 Suite 120 & 130 Jl. Hayam Wuruk No.28, Kelurahan Kebon
+              Klapa Kecamatan Gambir, Jakarta Pusat, DKI Jakarta
+            </p>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >0812-1111-8456</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          <h5>Consumer Complaints Service Contact Information</h5>
+          <br />
+          <p>
+            Directorate General of Consumer Protection and Trade Compliance,
+            Ministry of Trade of the Republic of Indonesia
+          </p>
+          <br />
+          <p>WhatsApp Ditjen PKTN: 0853-1111-1010</p>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Footer -->
+  </body>
+</html>
