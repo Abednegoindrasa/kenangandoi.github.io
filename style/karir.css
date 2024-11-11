@@ -48,17 +48,20 @@ nav a {
 .navbar_left span {
   color: rgb(139, 168, 32);
 }
-#logo a{
+#logo a {
   text-decoration: none;
   font-size: larger;
   font-weight: bold;
   margin-left: 10px;
   color: rgb(163, 120, 27);
 }
-#logo span{
+#logo span {
   color: rgb(139, 168, 32);
 }
-
+.navbar_center a {
+  color: #006041;
+  font-weight: bolder;
+}
 .navbar_center a:hover {
   background-color: rgb(0, 0, 0);
   padding: 0px 8px 0px 8px;
@@ -69,15 +72,26 @@ nav a {
   padding: 0px 8px 0px 8px;
   text-decoration: none;
   display: flex;
-
   list-style: none;
   gap: 10px;
 }
-
-#sign {
-  font-size: small;
+.navbar_right img {
+  width: 20px;
 }
-#login {
+.navbar_right button {
+  background-color: white;
+  border-color: white;
+}
+/* #sign {
+  font-size: small;
+} */
+.navbar_right button:hover {
+  background-color: #347928;
+  border-color: #347928;
+}
+#login,
+#sign,
+#profile {
   text-decoration: none;
   list-style: none;
   background-color: rgb(230, 227, 210);
@@ -85,6 +99,7 @@ nav a {
   border-radius: 10px;
   padding-left: 15px;
   font-weight: bold;
+  color: #006041;
 }
 .navbar_right #login :hover {
   background-color: black;
@@ -197,35 +212,46 @@ nav a {
 }
 
 /* End of Job Info */
+/* Container info faq */
+.container-info-faq {
+  position: relative;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+  text-align: center;
+  padding-top: 5.5vmax;
+  max-width: 700px;
+  margin: auto;
+}
 
-#logo a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    margin-left: 10px;
-    color: rgb(163, 120, 27);
+.info-faq-title h1 {
+  color: #006041;
+  font-weight: bold;
+  padding: 2vmax;
 }
-#logo span{
-    color: rgb(139, 168, 32);
+
+.info-faq-description p {
+  text-align: justify;
 }
-.container-footer{
-    width: 100%;
-    display: flex;
-    padding-right: 5%;
-    margin-left: 10000px;
+
+.accordion {
+  position: relative;
+  justify-content: center; /* menengahkan secara horizontal */
+  align-items: center; /* menengahkan secara vertikal */
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
 }
-.container-footer{
-    justify-content: space-between; 
-    left: 0;
-    right: 0;
-    
-    display: flex;
-    /* background-color:brown; */
-    padding-left: 5%;
-    padding-right: 1%;
-    background-color: rgb(255, 0, 0);
-    color: black;
-    
-    position: fixed;;
-    z-index: 999999999;
+
+.accordion-body {
+  text-align: justify;
+}
+#logo a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(163, 120, 27);
+}
+#logo span {
+  color: rgb(139, 168, 32);
 }

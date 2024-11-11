@@ -64,21 +64,31 @@ nav a {
   list-style: none;
   gap: 10px;
 }
-#logo a{
+#logo a {
   text-decoration: none;
   font-size: larger;
   font-weight: bold;
   margin-left: 10px;
   color: rgb(163, 120, 27);
 }
-#logo span{
+#logo span {
   color: rgb(139, 168, 32);
 }
-
-#sign {
-  font-size: small;
+.navbar_right button {
+  background-color: white;
+  border-color: white;
 }
-#login {
+
+.navbar_right button:hover {
+  background-color: #347928;
+  border-color: #347928;
+}
+/* #sign {
+  font-size: small;
+} */
+#login,
+#sign,
+#profile {
   text-decoration: none;
   list-style: none;
   background-color: rgb(230, 227, 210);
@@ -86,6 +96,11 @@ nav a {
   border-radius: 10px;
   padding-left: 15px;
   font-weight: bold;
+  color: #006041;
+}
+.navbar_center a {
+  color: #006041;
+  font-weight: bolder;
 }
 .navbar_right #login :hover {
   background-color: black;
@@ -95,6 +110,16 @@ nav a {
   font-weight: bold;
 }
 
+.navbar_right {
+  padding: 0px 8px 0px 8px;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.navbar_right img {
+  width: 20px;
+}
 /* Navbar Barr */
 .carousel-inner {
   height: 600px;
@@ -216,36 +241,4 @@ nav a {
   right: 16px;
   font-size: 20px;
   color: #006041;
-}
-
-#logo a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    margin-left: 10px;
-    color: rgb(163, 120, 27);
-}
-#logo span{
-    color: rgb(139, 168, 32);
-}
-.container-footer{
-    width: 100%;
-    display: flex;
-    padding-right: 5%;
-    margin-left: 10000px;
-}
-.container-footer{
-    justify-content: space-between; 
-    left: 0;
-    right: 0;
-    
-    display: flex;
-    /* background-color:brown; */
-    padding-left: 5%;
-    padding-right: 1%;
-    background-color: rgb(255, 0, 0);
-    color: black;
-    
-    position: fixed;;
-    z-index: 999999999;
 }

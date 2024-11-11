@@ -48,7 +48,10 @@ nav a {
 .navbar_left span {
   color: rgb(139, 168, 32);
 }
-
+.navbar_center a {
+  color: #006041;
+  font-weight: bolder;
+}
 .navbar_center a:hover {
   background-color: rgb(0, 0, 0);
   padding: 0px 8px 0px 8px;
@@ -59,15 +62,26 @@ nav a {
   padding: 0px 8px 0px 8px;
   text-decoration: none;
   display: flex;
-
   list-style: none;
   gap: 10px;
 }
-
-#sign {
-  font-size: small;
+.navbar_right img {
+  width: 20px;
 }
-#login {
+.navbar_right button {
+  background-color: white;
+  border-color: white;
+}
+.navbar_right button:hover {
+  background-color: #347928;
+  border-color: #347928;
+}
+/* #sign {
+  font-size: small;
+} */
+#login,
+#sign,
+#profile {
   text-decoration: none;
   list-style: none;
   background-color: rgb(230, 227, 210);
@@ -75,6 +89,7 @@ nav a {
   border-radius: 10px;
   padding-left: 15px;
   font-weight: bold;
+  color: #006041;
 }
 .navbar_right #login :hover {
   background-color: black;
@@ -159,13 +174,13 @@ nav a {
 }
 
 /* End of Hubungi Kami */
-#logo a{
+#logo a {
   text-decoration: none;
   font-size: larger;
   font-weight: bold;
   margin-left: 10px;
   color: rgb(163, 120, 27);
 }
-#logo span{
+#logo span {
   color: rgb(139, 168, 32);
 }

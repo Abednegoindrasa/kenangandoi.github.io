@@ -2,6 +2,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   color: black;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -33,7 +34,6 @@ nav ul {
 
 nav a {
   text-decoration: none;
-
   border: 2px;
   padding: 0px 8px 0px 8px;
 }
@@ -55,19 +55,35 @@ nav a {
   border-radius: 5px;
   color: greenyellow;
 }
+.navbar_center a {
+  color: #006041;
+  font-weight: bolder;
+}
 .navbar_right {
   padding: 0px 8px 0px 8px;
   text-decoration: none;
   display: flex;
-
   list-style: none;
   gap: 10px;
 }
-
-#sign {
-  font-size: small;
+.navbar_right button:hover {
+  background-color: #347928;
+  border-color: #347928;
 }
-#login {
+.navbar_right img {
+  width: 20px;
+}
+.navbar_right button {
+  background-color: white;
+  border-color: white;
+}
+/* #sign {
+  font-size: small;
+} */
+
+#login,
+#sign,
+#profile {
   text-decoration: none;
   list-style: none;
   background-color: rgb(230, 227, 210);
@@ -75,6 +91,7 @@ nav a {
   border-radius: 10px;
   padding-left: 15px;
   font-weight: bold;
+  color: #006041;
 }
 .navbar_right #login :hover {
   background-color: black;
@@ -322,13 +339,13 @@ Button styles .btn-primary {
   align-items: center; /* menengahkan secara vertikal */
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-#logo a{
+#logo a {
   text-decoration: none;
   font-size: larger;
   font-weight: bold;
   margin-left: 10px;
   color: rgb(163, 120, 27);
 }
-#logo span{
+#logo span {
   color: rgb(139, 168, 32);
 }
