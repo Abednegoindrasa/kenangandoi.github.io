@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kenangan Agnes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,16 +19,13 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style/faq.css" />
+    <link rel="stylesheet" href="style/styleMenu.css" />
   </head>
+
   <body>
     <nav class="navbar">
       <div class="navbar_left">
-        <img
-          src="./Picture/coffee-bean-icon.png"
-          alt="logo here!"
-          width="25px"
-        />
+        <img src="logo/coffee-bean-icon.png" alt="logo here!" width="25px" />
         <a href="index.html">Kenangan<span>DOI</span>.</a>
       </div>
       <div class="navbar_center">
@@ -36,125 +36,555 @@
           <li><a href="collab.html">Collaboration</a></li>
           <li><a href="karir.html">Career</a></li>
           <li><a href="contact_us.html">ContactUs</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="faq.html">Merchandise</a></li>
         </ul>
       </div>
       <div class="navbar_right">
-        <li><a id="sign" href="Registration.html">Sign Up</a></li>
-        <li><a id="login" href="login.html">Log In</a></li>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <img src="Picture/menu.png" alt="" />
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <li><a id="sign" href="Registration.html">Sign Up</a></li>
+            <br />
+            <li><a id="login" href="login.html">Log In</a></li>
+            <br />
+            <li><a id="profile" href="profile.html">Profile</a></li>
+          </div>
+        </div>
       </div>
+      <!-- Offcanvas Component -->
     </nav>
     <!-- Navbar -->
 
-    <!-- Main -->
-    <!-- Title -->
-    <div class="container-info-faq">
-      <div class="info-faq-title">
-        <h1>FAQ (Frequently Asked Question)</h1>
-      </div>
-      <div class="info-faq-description">
-        <p>
-          Untuk KenanganDoi yang lebih baik, kami membutuhkan masukan dari
-          pelanggan setia KenanganDoi untuk perbaikan layanan kami kedepannya.
-          Bagaimana cara mengajukan feedback/keluhan? <br />
-          <br />
-          Untuk pengajuan feedback/keluhan terhadap pelayanan dan produk
-          KenanganDoi, pelanggan dapat mengakses chatbot yang tersedia di
-          website kenangandoi.id atau menghubungi Whatsapp Customer Care
-          KenanganDoi
-          <br />
-          <br />
-          Untuk membantu menjawab beberapa pertanyaan umum seputar KenanganDoi,
-          berikut adalah beberapa pertanyaan dan jawabannya:
-        </p>
-      </div>
-    </div>
-    <!-- End of title -->
+    <!-- Header -->
+    <div class="container p-5 my-5">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
 
-    <!-- Faq Question -->
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne"
-            aria-expanded="false"
-            aria-controls="flush-collapseOne"
-          >
-            Bagaimana cara mengajukan keluhan?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseOne"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="Picture\944pIkbEsTzPI.jpg!bw700"
+              alt="Los Angeles"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Picture\coffee-171653_1280.jpg"
+              alt="Chicago"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Picture\ini-manfaat-konsumsi-kopi-hitam-dan-efek-sampingnya-untuk-kesehatan.jpg"
+              alt="New York"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
         >
-          <div class="accordion-body">
-            Mohon maaf atas ketidaknyamanannya. Untuk pengajuan keluhan terhadap
-            pelayanan dan produk Kenangan Doi dapat mengakses chatbot yang
-            tersedia di website kenangandoi.id atau dapat menghubungi WhatsApp
-            Customer Care Kenangan Doi dengan mengklik ikon WhatsApp di bawah
-            ini.
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <div class="container-fluid-menu mt-3">
+        <img src="Picture/OUR-MENU.png" alt="" />
+        <span>Merchandise</span>
+      </div>
+
+      <div class="row-menu">
+        <div class="col-4">
+          <nav
+            id="navbar-example3"
+            class="h-100 flex-column align-items-stretch pe-4 border-end"
+          >
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Americano Series</a>
+              <a class="nav-link" href="#item-2">Coffee</a>
+              <a class="nav-link" href="#item-3">Coffee of The Day</a>
+              <a class="nav-link" href="#item-4">Non Coffee</a>
+              <a class="nav-link" href="#item-5">Tea</a>
+            </nav>
+          </nav>
+        </div>
+
+        <div class="col-8">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example"
+            tabindex="0"
+          >
+            <div id="item-1">
+              <h1>Americano Series</h1>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Americano Iced.jpg"
+                      alt="Iced Americano"
+                    />
+                    <h4>Iced Americano</h4>
+                    <p>Rp 21.000</p>
+                    <p>
+                      Espresso shoot yang dicampur dengan segelas air
+                      menghadirkan karakter, aroma, dan rasa yang ideal.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Americano Hot.jpg"
+                      alt="Hot Americano"
+                    />
+                    <h4>Hot Americano</h4>
+                    <p>Rp 21.000</p>
+                    <p>
+                      Espresso shoot yang dicampur dengan segelas air
+                      menghadirkan karakter, aroma, dan rasa yang ideal.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Berry Manuka Americano (3).jpg"
+                      alt="Berry Manuka Americano"
+                    />
+                    <h4>Berry Manuka Americano</h4>
+                    <p>Rp 21.000</p>
+                    <p>
+                      Americano dengan madu Manuka yang pas untuk jadi energy
+                      booster
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Manuka Americano Hot.jpg"
+                      alt="Manuka Americano Hot"
+                    />
+                    <h4>Manuka Americano Hot</h4>
+                    <p>Rp 21.000</p>
+                    <p>
+                      Americano dengan madu Manuka yang pas untuk jadi energy
+                      booster
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="item-2">
+              <h1>Coffe Series</h1>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Cafe Malt Latte Iced (1).jpg"
+                      alt="Cafe Malt Latte Iced "
+                    />
+                    <h4>Iced Café Malt Latte</h4>
+                    <p>Rp 33.000</p>
+                    <p>
+                      Paduan latte dan sirup Irish yang menghasilkan aroma dan
+                      rasa lembut
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/cafe malt Latte Hot (1).jpg"
+                      alt="cafe malt latte hot"
+                    />
+                    <h4>Hot Café Malt Latte</h4>
+                    <p>Rp 32.000</p>
+                    <p>
+                      Paduan latte dan sirup Irish yang menghasilkan aroma dan
+                      rasa lembut
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/classiclatteiced173.jpg"
+                      alt="classiclatteiced"
+                    />
+                    <h4>Iced Classic Latte</h4>
+                    <p>Rp 24.000</p>
+                    <p>
+                      Perpaduan rasa espresso premium dengan saus krim spesial
+                      KenanganDoi
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Capucino Iced (1).jpg"
+                      alt="Capucino Iced"
+                    />
+                    <h4>Iced Cappuccino</h4>
+                    <p>Rp 29.000</p>
+                    <p>
+                      Paduan Espresso, susu hangat, dan lapisan foam tebal di
+                      atasnya tanpa gula tambahan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="item-3">
+              <h1>Coffee of The Day</h1>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/ICED COD (1).jpg"
+                      alt="Iced Aceh Gayo"
+                    />
+                    <h4>Iced Aceh Gayo</h4>
+                    <p>Rp 21.000</p>
+                    <p>
+                      Kopi aromatik dengan taste notes coklat, butterscotch, dan
+                      rempah
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/COD_satuan-01.jpg"
+                      alt="Hot Aceh Gayo"
+                    />
+                    <h4>Hot Aceh Gayo</h4>
+                    <p>Rp 21.000</p>
+                    <p>
+                      Kopi aromatik dengan taste notes coklat, butterscotch, dan
+                      rempah
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/ICED COD.jpg"
+                      alt="Iced Toraja Sapan"
+                    />
+                    <h4>Iced Toraja Sapan</h4>
+                    <p>Rp 21.000</p>
+                    <p>
+                      Kopi aromatik dengan notes citrus, rempah, dan molases
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/COD_satuan-02.jpg"
+                      alt="Hot Toraja Sapan"
+                    />
+                    <h4>Hot Toraja Sapan</h4>
+                    <p>Rp 21.000</p>
+                    <p>Kopi aromatik dengan notes fruity dan citrus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="item-4">
+              <h1>Non Coffe</h1>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/darkchocolate-01.jpg"
+                      alt="Iced Dark Chocolate "
+                    />
+                    <h4>Iced Dark Chocolate</h4>
+                    <p>Rp 33.000</p>
+                    <p>
+                      Dibuat dari 100% dark chocolate dan paduan susu yang
+                      nikmat
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/darkchocolate-02.jpg"
+                      alt="Hot Dark Chocolate"
+                    />
+                    <h4>Hot Dark Chocolate</h4>
+                    <p>Rp 33.000</p>
+                    <p>
+                      Dibuat dari 100% dark chocolate dan paduan susu yang
+                      nikmat
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/almondchocoiced173.jpg"
+                      alt="Iced Almond Choco"
+                    />
+                    <h4>Iced Almond Choco</h4>
+                    <p>Rp 39.000</p>
+                    <p>
+                      Cokelat klasik dari KenanganDoi Coffee yang dipadu dengan
+                      susu almond. Sebuah definisi comfort drink yang
+                      sesungguhnya.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/almondchocohot173.jpg"
+                      alt="Hot Almond Choco"
+                    />
+                    <h4>Hot Almond Choco</h4>
+                    <p>Rp 39.000</p>
+                    <p>
+                      Cokelat klasik dari KenanganDoi Coffee yang dipadu dengan
+                      susu almond. Sebuah definisi comfort drink yang
+                      sesungguhnya.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="item-5">
+              <h1>Tea Series</h1>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/matchagreentealatte173.jpg"
+                      alt="Iced Matcha Green Tea"
+                    />
+                    <h4>Iced Matcha Green Tea</h4>
+                    <p>Rp 33.000</p>
+                    <p>
+                      Bubuk matcha spesial Fore yang lembut dan creamy berpadu
+                      dengan susu segar
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/matchagreeteahot173.jpg"
+                      alt="Hot Matcha Green Tea"
+                    />
+                    <h4>Hot Matcha Green Tea</h4>
+                    <p>Rp 33.000</p>
+                    <p>
+                      Bubuk matcha spesial Fore yang lembut dan creamy berpadu
+                      dengan susu segar
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Thumbnail_Aromatic Golden Jasmine Tea.jpg"
+                      alt="Iced Aromatic Golden Jasmine Tea"
+                    />
+                    <h4>Iced Aromatic Golden Jasmine Tea</h4>
+                    <p>Rp 29.000</p>
+                    <p>
+                      Segarnya jasmine tea dengan paduan aromatik dari cream
+                      jasmine yang terinspirasi dari parfum HMNS Essence of The
+                      Sun
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="menu-item">
+                    <img
+                      src="Picture/menu/Thumbnail_Aromatic Pandan Jasmine Latte.jpg"
+                      alt="Iced Aromatic Pandan Jasmine Latte"
+                    />
+                    <h4>Iced Aromatic Pandan Jasmine Latte</h4>
+                    <p>Rp 29.000</p>
+                    <p>
+                      Nikmatnya pandan latte dipadukan dengan cream jasmine yang
+                      aromatik terinspirasi dari parfum HMNS Essence of The
+                      Night
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo"
-            aria-expanded="false"
-            aria-controls="flush-collapseTwo"
-          >
-            Dimanakah lokasi outlet kenanganDoi?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseTwo"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Untuk lokasi Kenangan Doi bisa dicek di Google Maps dengan mengetik
-            “Kenangan Doi” atau cek di pilihan "Store" pada homepage
-            kenangandoi.id untuk menemukan lokasi Kenangan Doi terdekat dari
-            alamatmu.
+      <!-- <div class="row">
+        <div class="col-sm-4 border">
+          <ul>
+            <li><a href="">Americano Series</a></li>
+            <li><a href="">Coffee</a></li>
+            <li><a href="">Coffee of The Day</a></li>
+            <li><a href="">Ice Blended</a></li>
+            <li><a href="">Non Coffee</a></li>
+            <li><a href="">Tea</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-8 border">
+          <h1>Americano Series</h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="menu-item">
+                <img
+                  src="Picture\menu\Americano Iced.jpg"
+                  alt="Iced Americano"
+                />
+                <h4>Iced Americano</h4>
+                <p>Rp 21.000</p>
+                <p>
+                  Espresso shoot yang dicampur dengan segelas air menghadirkan
+                  karakter, aroma, dan rasa yang ideal.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="menu-item">
+                <img
+                  src="Picture\menu\Americano Hot.jpg"
+                  alt="Iced Americano"
+                />
+                <h4>Iced Americano</h4>
+                <p>Rp 21.000</p>
+                <p>
+                  Espresso shoot yang dicampur dengan segelas air menghadirkan
+                  karakter, aroma, dan rasa yang ideal.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="menu-item">
+                <img
+                  src="Picture\menu\Berry Manuka Americano (3).jpg"
+                  alt="Iced Americano"
+                />
+                <h4>Iced Americano</h4>
+                <p>Rp 21.000</p>
+                <p>
+                  Espresso shoot yang dicampur dengan segelas air menghadirkan
+                  karakter, aroma, dan rasa yang ideal.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="menu-item">
+                <img
+                  src="Picture\menu\Manuka Americano Hot.jpg"
+                  alt="Iced Americano"
+                />
+                <h4>Iced Americano</h4>
+                <p>Rp 21.000</p>
+                <p>
+                  Espresso shoot yang dicampur dengan segelas air menghadirkan
+                  karakter, aroma, dan rasa yang ideal.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree"
-            aria-expanded="false"
-            aria-controls="flush-collapseThree"
-          >
-            Bagaimana cara melamar pekerjaan di kenanganDoi?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseThree"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Untuk melamar kerja pada kenanganDoi dapat cek di pilihan "Carrer"
-            pada homepage kenangandoi.id untuk dapat mengecek ketersediaan
-            lowongan
-          </div>
-        </div>
-      </div>
+      </div> -->
     </div>
-    <!-- End of Faq Question -->
-    <!-- End of Main -->
+
+    <!-- Header -->
+
     <!-- Footer -->
+    <!-- <div id="footer" class="row">
+      <div id="leftfot" class="col-sm-4 bg-primary text-white">
+        <img src="logo\coffee-bean-icon.png" alt="logo here!" width="25px">
+        <a href="">Kenangan<span>DOI</span>.</a>
+      </div>
+      <div id="cenfoot" class="col-sm-4 bg-dark text-white">
+        <h4>Customer Center</h4>
+        <br>
+        <div class="row">
+          <div class="col">
+              <img src="" alt="loc">
+          </div>
+          <div class="col">
+            <p>Malang</p>
+            <p>Surabaya</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 bg-primary text-white">33.33%</div>
+    </div> -->
+
     <div id="footer" class="container">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
@@ -202,6 +632,8 @@
         </div>
       </footer>
     </div>
-    <!-- End of Footer -->
+
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
