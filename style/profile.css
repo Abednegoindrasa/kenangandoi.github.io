@@ -188,3 +188,23 @@ nav a {
   border-radius: 5px;
   box-sizing: border-box;
 }
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-group .close-btn {
+  background-color: #dc3545;
+  color: white;
+}
