@@ -94,13 +94,11 @@ nav a {
 #profile {
   text-decoration: none;
   list-style: none;
-  background-color: rgb(230, 227, 210);
-  padding: 10px 16px 10px 0px;
-  border-radius: 10px;
-  padding-left: 15px;
   font-weight: bold;
+  font-size: 20px;
   color: #006041;
 }
+
 .navbar_right #login :hover {
   background-color: black;
   padding: 10px 16px 10px 0px;
@@ -254,4 +252,13 @@ nav a {
 }
 #logo span {
   color: rgb(139, 168, 32);
+}
+.offcanvas-body hr {
+  width: 100%;
+}
+.offcanvas-body li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }

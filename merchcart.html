@@ -67,25 +67,25 @@
           </div>
           <div class="offcanvas-body">
             <li><a id="sign" href="Registration.html">Sign Up</a></li>
-            <br />
+            <hr />
             <li><a id="login" href="login.html">Log In</a></li>
-            <br />
+            <hr />
             <li><a id="profile" href="profile.html">Profile</a></li>
+            <hr />
           </div>
         </div>
       </div>
       <!-- Offcanvas Component -->
     </nav>
     <!-- Navbar -->
-     <br>
-     <br>
+    <br />
+    <br />
 
     <!-- Cart Page -->
     <div class="container my-5">
       <h1 class="text-center mb-4">Your Cart</h1>
-      <br>
-      <br>
-
+      <br />
+      <br />
 
       <!-- Cart Table -->
       <table class="table table-striped">
@@ -94,26 +94,29 @@
             <th scope="col">Product</th>
             <th scope="col">Price</th>
             <th scope="col">Quantity</th>
-            <th style="text-align: center;" scope="col">Actions</th>
-            <th style="text-align: right;" scope="col">Total</th>
-            
+            <th style="text-align: center" scope="col">Actions</th>
+            <th style="text-align: right" scope="col">Total</th>
           </tr>
         </thead>
         <tbody>
           <!-- Product 1 -->
           <tr>
             <td>
-              <img src="Picture/merchandise/t-shirt.jpg" alt="T-shirt" width="100" />
+              <img
+                src="Picture/merchandise/t-shirt.jpg"
+                alt="T-shirt"
+                width="100"
+              />
               T-shirt
             </td>
             <td>Rp 120.000,00</td>
             <td>
               <input type="number" class="form-control" value="1" min="1" />
             </td>
-            <td style="text-align: center;" >
+            <td style="text-align: center">
               <button class="btn btn-danger">Remove</button>
             </td>
-            <td style="text-align: right;" >Rp 120.000,00</td>
+            <td style="text-align: right">Rp 120.000,00</td>
           </tr>
           <!-- Product 2 -->
           <tr>
@@ -125,23 +128,22 @@
             <td>
               <input type="number" class="form-control" value="1" min="1" />
             </td>
-            
-            <td style="text-align: center;">
+
+            <td style="text-align: center">
               <button class="btn btn-danger">Remove</button>
             </td>
-            <td style="text-align: right;">Rp 80.000,00</td>
+            <td style="text-align: right">Rp 80.000,00</td>
           </tr>
         </tbody>
       </table>
-      <br>
-      <br>
+      <br />
+      <br />
       <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">Bank</th>
             <th scope="col">Payment Methods</th>
-            <th style="text-align: right;" scope="col">TAX+</th>
-        
+            <th style="text-align: right" scope="col">TAX+</th>
           </tr>
         </thead>
         <tbody>
@@ -161,19 +163,18 @@
                 <option value="VIRTUAL ACCOUNT">VIRTUAL ACCOUNT</option>
               </select>
             </td>
-            
-            <td style="text-align: right;">Rp 10.000,00</td>
-         
+
+            <td style="text-align: right">Rp 10.000,00</td>
           </tr>
         </tbody>
       </table>
-      <br>
-      <br>
-
-
+      <br />
+      <br />
 
       <!-- Cart Summary -->
-      <div  class="d-flex justify-content-md-end gap-lg-5 align-items-center mt-4">
+      <div
+        class="d-flex justify-content-md-end gap-lg-5 align-items-center mt-4"
+      >
         <h3>Total: <span id="total">Rp 200.000,00</span></h3>
         <a href="checkout.html" class="btn btn-success">Proceed to Checkout</a>
       </div>
