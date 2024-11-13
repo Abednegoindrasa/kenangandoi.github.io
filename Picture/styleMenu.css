@@ -269,7 +269,7 @@ nav a {
   z-index: 2; /* pastikan teks utama berada di depan */
   padding-top: 30px;
 }
-.col-sm-6 img {
+.image-register img {
   padding-top: 14vmax;
   border-radius: 5%;
 }
