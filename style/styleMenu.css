@@ -267,8 +267,8 @@ nav a {
   z-index: 2; /* pastikan teks utama berada di depan */
   padding-top: 30px;
 }
-.image-register img {
-  padding-top: 14vmax;
+.col-sm-6 img {
+  padding-top: 10vmax;
   border-radius: 5%;
 }
 .offcanvas-body hr {
