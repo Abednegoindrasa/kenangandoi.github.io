@@ -280,6 +280,21 @@ nav a {
   justify-content: center;
   margin: 10px 0;
 }
-.product-item{
+.product-item {
   padding-bottom: 30px;
+}
+
+.goto a {
+  padding: 25px;
+  padding-left: 0px;
+}
+.GoToMk a {
+  text-decoration: none;
+  list-style: none;
+}
+Button styles .btn-primary {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
