@@ -191,3 +191,14 @@ nav a {
   justify-content: center;
   margin: 10px 0;
 }
+.btn {
+  background-color: #006041;
+  border: #006041;
+  color: antiquewhite;
+}
+
+.btn button:hover {
+  background-color: #006041;
+  border: #006041;
+  color: antiquewhite;
+}

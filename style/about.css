@@ -356,3 +356,8 @@ Button styles .btn-primary {
   justify-content: center;
   margin: 10px 0;
 }
+
+.btn {
+  background-color: #006041;
+  border: #006041;
+}
