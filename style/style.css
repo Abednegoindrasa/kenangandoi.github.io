@@ -2,6 +2,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   color: black;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -19,6 +20,7 @@ body {
   position: fixed;
   z-index: 999999999;
 }
+
 
 nav ul {
   list-style: none;
